@@ -725,7 +725,7 @@ I am always eager to learn new skills and explore new challenges in the field of
                 
 
             <!--=============== CONTACT ===============-->
-            <section class="contact section" id="contact">
+                        <section class="contact section" id="contact">
                 <span class="section_subtitle"></span>
                 <h2 class="section_title" style="margin-left: 15rem;">Contact Me</h2>
 
@@ -735,31 +735,32 @@ I am always eager to learn new skills and explore new challenges in the field of
                     <h3 class="contact_title">Write me your project</h3>
                   
 
-                    <form action="" class="contact_form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact_form">
+                        
                         <div class="contact_form-div ">
+                            <input type="hidden" name="access_key" value="9e82b1f0-201d-45d8-b532-70a6d516e895">
                             <label for="" class="contact_form-tag"> Name</label>
-                            <input type="text" placeholder="Insert your name" class="contact_form-input">
+                            <input type="text" name="Name" placeholder="Insert your name" class="contact_form-input">
                         </div>
 
                         <div class="contact_form-div ">
                             <label for="" class="contact_form-tag"> Mail</label>
-                            <input type="email" placeholder="Insert your mail" class="contact_form-input">
+                            <input type="email" name="Mail" placeholder="Insert your mail" class="contact_form-input">
                         </div>
 
                         <div class="contact_form-div ">
                             <label for="" class="contact_form-tag">Phone Number</label>
-                            <input type="number" placeholder="Insert your phone number" class="contact_form-input">
+                            <input type="number" name="phone" placeholder="Insert your phone number" class="contact_form-input">
                         </div>
 
                         <div class="contact_form-div contact_form-area">
                             <label for="" class="contact_form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your message" class="contact_form-input"></textarea>
+                            <textarea name="message" id="" cols="30" rows="10" placeholder="Write your message" class="contact_form-input"></textarea>
                         </div>
                         <button class="button"> Submit </button> 
                     </form>
                   </div>
                 </div>
-
             </section>
               <!-- contact section ends -->
 
