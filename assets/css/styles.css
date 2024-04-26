@@ -180,6 +180,12 @@ body.light-theme
   display: flex;
 }
 
+.container {
+  max-width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .grid {
   display: grid;
   gap: 1.25rem;
@@ -470,6 +476,12 @@ body.light-theme
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 768px) {
+  .about_container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
 
 /*=============== Education ===============*/
 .education_container{
@@ -535,7 +547,16 @@ body.light-theme
   background-color: var(--first-color);
   transform: translate(6px, -7px) ;
 }
+@media screen and (max-width: 768px) {
+  .education_container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 
+  .education_data {
+    grid-template-columns: 1fr;
+  }
+}
 /*=============== SKILLS ===============*/
 
 .skills_container{
@@ -605,7 +626,16 @@ body.light-theme
 }
 
 
+@media screen and (max-width: 768px) {
+  .skills_container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 
+  .skills_content {
+    padding: 1rem;
+  }
+}
 
 
 /*=============== Projects ===============*/
@@ -615,15 +645,17 @@ body.light-theme
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding-top: 1rem;
-  
+  background-color: var(--container-color);
+  border-color: black;
 }
 
 .projects_card{
-  border-color: var(--title-color);
+  border-color: black;
   background-color: var(--container-color);
   padding: 3rem 1.5rem 1.5rem;
   border-radius: 2rem;
-  
+  border-radius: .60rem;
+  border: rgb(163, 163, 163) 0.1rem solid
 }
 
 
@@ -725,6 +757,18 @@ body.light-theme
   opacity: 1;
   visibility: visible;
 }
+@media screen and (max-width: 768px) {
+  .projects_container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  .projects_card {
+    padding: 2rem;
+  }
+}
+
 
 /*=============== Certifications ===============*/
 .certif_container{
@@ -743,6 +787,7 @@ body.light-theme
   border-radius: 1rem;
   width: calc(50% - 10px); /* Adjust width and margins as needed */
   margin-bottom: 20px;
+  border: rgb(163, 163, 163)  0.1rem solid; 
 }
 
 .certif_img{
@@ -783,7 +828,17 @@ body.light-theme
 }
 
 
+@media screen and (max-width: 768px) {
+  .certif_container {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 
+  .certif_card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
 
 /* Swiper class */
 
@@ -915,7 +970,7 @@ body.light-theme
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-/*@media screen and (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .nav_menu{
     padding: 1rem 1.5rem;
   }
@@ -932,7 +987,45 @@ body.light-theme
   .home_img{
     width: 130px;
   }
-}*/
+
+  .about_info{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .skills_box{
+    column-gap: 1rem;
+  }
+
+  .skills_name{
+    font-size: var(--small-font-size);
+  }
+
+  .project_container{
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .nav_menu {
+    width: 100%;
+    padding: 1rem;
+    bottom: 0;
+  }
+
+  .nav_link {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+
 
 /* For medium devices */
 
